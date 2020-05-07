@@ -2,6 +2,7 @@
 import sys
 import copy
 
+# This scripts works with a multiple sequence alignment in PHYLIP format
 
 def read(path):
     with open(path, "r") as file:
@@ -36,10 +37,7 @@ def read(path):
                     number = float(numerator)/denominator
                     if number == 0:
                         number = 0
-                # print names[name_counter_1]+'  vs  '+names[name_counter_2]+': Numerator:'+str(numerator)+', Denominator: '+str(denominator)+', number: '+str(number)
                 print names[name_counter_1]+'   '+names[name_counter_2]+'   '+str(number)
-                # with open("result.txt", "a") as result_file:
-                #     result_file.write(names[name_counter_1]+'   '+names[name_counter_2]+'   '+str(number)+'\n')
 
                 name_counter_2 += 1
 
@@ -54,4 +52,3 @@ if __name__ == '__main__':
     except Exception, e:
         print e
         print '[Error] invalid file path, for example: python comparasion.py names.txt'
-
