@@ -1,0 +1,24 @@
+#nexus
+begin sets;
+	charset Subset1 = 1-786 1636-2382 3631-4173;
+	charset Subset2 = 787-1635;
+	charset Subset3 = 2383-2988;
+	charset Subset4 = 6775-7299 2989-3630;
+	charset Subset5 = 4174-4998;
+	charset Subset6 = 4999-5679;
+	charset Subset7 = 5680-6201;
+	charset Subset8 = 6202-6774;
+	charset Subset9 = 7300-8148;
+	charset Subset10 = 8149-8994;
+	charset Subset11 = 8995-9639;
+	charset Subset12 = 9640-10167;
+	charset Subset13 = 10168-10908;
+	charset Subset14 = 10909-11502;
+	charset Subset15 = 11503-12351;
+	charset Subset16 = 12352-13200;
+	charset Subset17 = 13201-13986;
+	charset Subset18 = 13987-14835;
+	charset Subset19 = 14836-15684;
+	charset Subset20 = 15685-16533;
+	charpartition PartitionFinder = GTR+G:Subset1, GTR+G:Subset2, GTR+G:Subset3, GTR+G:Subset4, GTR+G:Subset5, GTR+G:Subset6, GTR+G:Subset7, GTR+G:Subset8, GTR+G:Subset9, GTR+G:Subset10, GTR+G:Subset11, GTR+G:Subset12, GTR+G:Subset13, GTR+G:Subset14, GTR+G:Subset15, GTR+G:Subset16, GTR+G:Subset17, GTR+G:Subset18, GTR+G:Subset19, GTR+G:Subset20;
+end;

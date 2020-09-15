@@ -1,0 +1,12 @@
+#nexus
+begin sets;
+	charset Subset1 = 6142-6990 1-786 2782-3606;
+	charset Subset2 = 787-1632;
+	charset Subset3 = 1633-2238;
+	charset Subset4 = 2239-2781 6991-7839;
+	charset Subset5 = 3607-4128;
+	charset Subset6 = 4129-4701;
+	charset Subset7 = 4702-5547;
+	charset Subset8 = 5548-6141;
+	charpartition PartitionFinder = GTR+G:Subset1, GTR+G:Subset2, GTR+G:Subset3, GTR+G:Subset4, GTR+G:Subset5, GTR+G:Subset6, GTR+G:Subset7, GTR+G:Subset8;
+end;
